@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="contentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #f0f4f8;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ism.controllers.ArticleController">
+   <children>
+      <Pane layoutX="50.0" layoutY="50.0" prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 0, 0);">
+         <children>
+            <VBox alignment="CENTER" layoutX="30.0" layoutY="20.0" spacing="15.0" prefWidth="340.0">
+               <Label text="Ajouter un article" textFill="#333333">
+                  <font>
+                     <Font name="Arial Bold" size="18.0" />
+                  </font>
+               </Label>
+               <TextField fx:id="libelleField" promptText="Libellé de l'article" style="-fx-background-color: #f7f9fc; -fx-background-radius: 5;" />
+               <TextField fx:id="prixField" promptText="Prix" style="-fx-background-color: #f7f9fc; -fx-background-radius: 5;" />
+               <TextField fx:id="qteStockField" promptText="Quantité en stock" style="-fx-background-color: #f7f9fc; -fx-background-radius: 5;" />
+               <Button fx:id="createArticleButton" onAction="#createArticle" style="-fx-background-color: #0077cc; -fx-background-radius: 5;" text="Créer un article" textFill="WHITE" />
+            </VBox>
+         </children>
+      </Pane>
+      <TextArea fx:id="outputArea" editable="false" layoutY="360.0" prefHeight="40.0" prefWidth="500.0" style="-fx-background-color: #ffffff; -fx-border-color: #cccccc; -fx-border-radius: 5;" />
+   </children>
+</Pane>

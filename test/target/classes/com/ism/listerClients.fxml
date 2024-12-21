@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="contentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #f0f4f8;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ism.controllers.ClientListController">
+   <children>
+      <Label layoutX="180.0" layoutY="20.0" text="Liste des Clients" textFill="#333333">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="380.0" layoutY="20.0" mnemonicParsing="false" onAction="#addClient" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #007acc; -fx-background-radius: 5;" text="Ajouter" textFill="white">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tabview" layoutX="50.0" layoutY="70.0" prefHeight="250.0" prefWidth="400.0" style="-fx-background-color: white; -fx-background-radius: 5; -fx-border-color: #cccccc; -fx-border-radius: 5;">
+         <columns>
+            <TableColumn fx:id="nom" prefWidth="100.0" text="Nom" />
+            <TableColumn fx:id="prenom" prefWidth="100.0" text="Prénom" />
+            <TableColumn fx:id="adresse" prefWidth="100.0" text="Adresse" />
+            <TableColumn fx:id="telephone" prefWidth="100.0" text="Téléphone" />
+         </columns>
+      </TableView>
+   </children>
+</Pane>
